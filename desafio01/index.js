@@ -17,7 +17,7 @@ server.post("/projects", (req, res) => {
   return res.json(projetos);
 });
 
-server.post("/projects/:index", (req, res) => {
+server.post("/projects/:index/tasks", (req, res) => {
   const { title } = req.body;
   const { index } = req.params;
 
@@ -26,6 +26,21 @@ server.post("/projects/:index", (req, res) => {
   return res.json(projetos);
 });
 
-server.post("/projects");
+server.put("/projects/:index", (req, res) => {
+  const { title } = req.body;
+  const { index } = req.params;
+
+  projetos[index - 1]["title"] = title;
+
+  return res.json(projetos);
+});
+
+server.delete("/projects/:index", (req, res) => {
+  const { index } = req.params;
+
+  projetos.splice(index - 1, 1);
+
+  return res.json(projetos);
+});
 
 server.listen(3000);
