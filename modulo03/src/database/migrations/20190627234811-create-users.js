@@ -5,7 +5,7 @@ module.exports = {
                 type: Sequelize.INTEGER,
                 allowNull: false,
                 autoIncrement: true,
-                primarykey: true,
+                primaryKey: true,
             },
             name: {
                 type: Sequelize.STRING,
@@ -21,7 +21,7 @@ module.exports = {
                 allowNull: false,
             },
             provider: {
-                type: Sequelize.STRING,
+                type: Sequelize.BOOLEAN,
                 defaultValue: false,
                 allowNull: false,
             },
