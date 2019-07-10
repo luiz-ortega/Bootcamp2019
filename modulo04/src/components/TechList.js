@@ -16,7 +16,7 @@ class TechList extends Component {
     }
   }
 
-  //Executado sempre que o houver alterações nas props ou state
+  // Executado sempre que o houver alterações nas props ou state
   componentDidUpdate(_, prevState) {
     if (prevState.techs !== this.state.techs) {
       localStorage.setItem("techs", JSON.stringify(this.state.techs));
