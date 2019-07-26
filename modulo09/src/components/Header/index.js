@@ -23,7 +23,7 @@ export default function Header() {
                     <Notifications />
                     <Profile>
                         <div>
-                            <strong>{profile.profile}</strong>
+                            <strong>{profile.name}</strong>
                             <Link to="/profile">Meu perfil</Link>
                         </div>
                         <img
