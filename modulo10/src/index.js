@@ -1,12 +1,14 @@
 import React from 'react';
-import { View, Text, SafeAreaView } from 'react-native';
+import { SafeAreaView } from 'react-native';
+
+import Teste from './Teste';
 
 // import { Container } from './styles';
 
 export default function App() {
     return (
         <SafeAreaView>
-            <Text>Hello Wolrd</Text>
+            <Teste />
         </SafeAreaView>
     );
 }
