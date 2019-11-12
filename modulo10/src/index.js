@@ -1,15 +1,8 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
 
-import Teste from '~/Teste';
-
-// import { Container } from './styles';
+import SignIn from '~/pages/SignIn';
+import SignUp from '~/pages/SignUp';
 
 export default function src() {
-    return (
-        <SafeAreaView>
-            <Text>Hello World</Text>
-            <Teste />
-        </SafeAreaView>
-    );
+    return <SignIn />;
 }
