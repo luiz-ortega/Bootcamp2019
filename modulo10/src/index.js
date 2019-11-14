@@ -1,8 +1,7 @@
 import React from 'react';
 
-import SignIn from '~/pages/SignIn';
-import SignUp from '~/pages/SignUp';
+import Routes from './routes';
 
 export default function src() {
-    return <SignIn />;
+    return <Routes />;
 }
