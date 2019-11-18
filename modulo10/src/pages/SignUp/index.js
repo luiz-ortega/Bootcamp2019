@@ -67,5 +67,5 @@ export default function SignUp({navigation}) {
 }
 
 SignUp.propTypes = {
-    navigation: PropTypes.objectOf.isRequired,
+    navigation: PropTypes.func.isRequired,
 };
