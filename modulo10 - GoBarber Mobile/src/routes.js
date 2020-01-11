@@ -5,6 +5,7 @@ import {createBottomTabNavigator} from 'react-navigation-tabs';
 
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
+import {TapGestureHandler} from 'react-native-gesture-handler';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 
@@ -58,6 +59,7 @@ export default (signedIn = false) =>
                         Profile,
                     },
                     {
+                        resetOnBlur: true,
                         tabBarOptions: {
                             keyboardHidesTabBar: true,
                             activeTintColor: '#fff',
